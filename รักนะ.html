@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>rakna design</title>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Kanit', sans-serif;
+      background: linear-gradient(to bottom, #000, #b80404);
+      color: #fff;
+    }
+    .hero {
+      text-align: center;
+      padding: 40px 20px 20px;
+    }
+    .logo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin: 0 auto 20px;
+      background: url('https://scontent.fkdt3-1.fna.fbcdn.net/v/t39.30808-6/519935268_1299982085027933_6444802453642388864_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFH9NJ_AtHsWI_tVbDgizjj1R2IqGD8JFvVHYioYPwkWydMC9Q3GSNf77kVnPgkOT6gmuktJcZjQb9tFtDggBMU&_nc_ohc=s7rw4_koF4oQ7kNvwEiTW8c&_nc_oc=Adnrgk1Zb9eVVS6R45yE_5WW2qD1EzPCw2a5BoLNJuuPzgpBFVZwpdL5Sje0TABszflexO5VYPtD7Ib42LrwsI4m&_nc_zt=23&_nc_ht=scontent.fkdt3-1.fna&_nc_gid=VCdTWAmrfOTmTKkt3SreaA&oh=00_AfSlGaGldk-9mzagE-PIiSK_vrjFvInAUBYOePFmYa2ssQ&oe=68859869') no-repeat center/cover;
+      box-shadow: 0 4px 12px rgb(196, 6, 6);
+    }
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      font-weight: 700;
+      text-shadow: 0 0 5px #ff0000;
+    }
+    .subheading {
+      margin-top: 10px;
+      font-size: 1.2rem;
+      color: #ffdddd;
+    }
+    #gallery {
+      max-width: 600px;
+      margin: 20px auto 60px;
+    }
+    .gallery-item {
+      margin-bottom: 25px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    .gallery-item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 16px rgba(255, 0, 0, 0.7);
+    }
+    .gallery-item img {
+      width: 100%;
+      display: block;
+      border-radius: 12px;
+      max-height: 400px;
+      object-fit: cover;
+    }
+    footer {
+      background-color: #0e0909;
+      padding: 20px 10px;
+      text-align: center;
+      font-size: 1rem;
+      color: #f1f1f1;
+      box-shadow: 0 -2px 10px rgba(196, 6, 6, 0.7);
+      user-select: none;
+    }
+    footer a {
+      color: #ff4c4c;
+      text-decoration: none;
+      font-weight: 700;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+    .contact-widget {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      z-index: 9999;
+    }
+    .contact-widget a {
+      display: flex;
+      align-items: center;
+      background: #0e0909;
+      color: #f1f1f1;
+      padding: 10px 14px;
+      border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0 2px 8px rgba(255, 0, 0, 0.6);
+      transition: background-color 0.3s ease, color 0.3s ease;
+      width: 200px;
+      font-weight: 700;
+      font-size: 1rem;
+      user-select: none;
+    }
+    .contact-widget a:hover {
+      background: #ff0000;
+      color: #000;
+      box-shadow: 0 4px 12px rgba(255, 0, 0, 0.9);
+    }
+    .contact-widget svg {
+      width: 24px;
+      height: 24px;
+      margin-right: 12px;
+      fill: currentColor;
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <div class="logo"></div>
+    <h1>rakna design</h1>
+    <div class="subheading">ดูผลงานของเรา</div>
+  </section>
+
+  <section id="gallery">
+    <div class="gallery-item">
+      <img src="https://scontent.fkdt3-1.fna.fbcdn.net/v/t1.6435-9/124967398_198608771781657_2893472107660521187_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGI-hxpg6AfzuINbxSVXMakTmTsyyKeaSNOZOzLIp5pI3dR6WqWPx82LIPyShS6hg_sNT_xn1HHOzTdzujstEqn&_nc_ohc=xsmGLK9rdMsQ7kNvwGv-2eP&_nc_oc=AdnPngUTZ_Y8-PfAAfPr3PaHbd9yhdMffRhmhMkvtrByzLoI6C9-fa_XYNZXVJ9MrkcV9E1tK52HJF5YsNCes1x0&_nc_zt=23&_nc_ht=scontent.fkdt3-1.fna&_nc_gid=81MpTXCgcguUyPlvH_T2kQ&oh=00_AfTiuDfH01doaBl_TwG-dKcqZYLs9btdUBI51GESW23UMg&oe=68A71298" alt="ผลงาน 1" />
+    </div>
+    <div class="gallery-item">
+      <img src="https://scontent.fkdt3-1.fna.fbcdn.net/v/t1.6435-9/124260100_198611921781342_2828710084649464836_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeG4RTFotmLdXAcyKkq3Jj4sjUs_YWTDdjGNSz9hZMN2MYBOJba2402lVigI293MSNWpFWJ0gepgBv5319UTHOxw&_nc_ohc=fh4eCtF6u_MQ7kNvwHUQ22B&_nc_oc=Adny0xp3zTQXK0UiiWiFakC4homGoIsN7T4ADYcfy18zkxBzfxXbnkc2kLLFzNZiUZYtkAPhRzCPAEdpk8JeJ7n9&_nc_zt=23&_nc_ht=scontent.fkdt3-1.fna&_nc_gid=HWDOg4i2i6GqR52q51uexw&oh=00_AfSrrJmdlc_K9mN_GVQ9jQInkl4qyFEXlT18Rvvg3tMAIw&oe=68A72690" alt="ผลงาน 2" />
+    </div>
+    <div class="gallery-item">
+      <img src="https://scontent.fkdt3-1.fna.fbcdn.net/v/t1.6435-9/122703235_192956705680197_8804643632427480917_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeExz5TQDSE4KptTuB1a03FljpnkvgKVcQWOmeS-ApVxBfbX7hr4TClbp7ZnytooeuA-YWLWwRp9Q3ZrTtOTO8cj&_nc_ohc=hRfg3czAfVgQ7kNvwE6NKBF&_nc_oc=AdnMGCU8u5uIb89PZXUvoFZQmy0dIKAkobnOfhAg7cnsDxZepcoSy9ZtFZAs96_U2dFbT-zznt3OYwvGOZLlm10u&_nc_zt=23&_nc_ht=scontent.fkdt3-1.fna&_nc_gid=KF6xWi5kaavtCBZ0VGmDeA&oh=00_AfReIalNdUX4MjVQpAL3oIXiNiagEw60gIht9U-YBXUCBQ&oe=68A70FBA" alt="ผลงาน 3" />
+    </div>
+    <div class="gallery-item">
+      <img src="https://scontent.fkdt3-1.fna.fbcdn.net/v/t1.6435-9/90107776_106487057660496_8195768400815849472_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGk0QBGT4RgzZgsLRu_D0kmoma5SsuRQQiiZrlKy5FBCMkqy25N-w4hz4gZWedobmjE8sgsPiRctCcSwvJrujIQ&_nc_ohc=Klu8QEO3jlQQ7kNvwG3POD0&_nc_oc=AdmyHerRH0pV2xlUR1RsLcKftMZv5hvR5eJVB3qvK-ayuGzRvMdIyvbkVxwW6u_6SKqwXBhPldcF5pLA1vAgTaZP&_nc_zt=23&_nc_ht=scontent.fkdt3-1.fna&_nc_gid=8iEhHbzWDxxXU93ZPPcg7Q&oh=00_AfRmI2UGGopLi1CnLSWX55CdbD_23Bo5ZocsYH2zl8VqFw&oe=68A72703" alt="ผลงาน 4" />
+    </div>
+    <div class="gallery-item">
+      <img src="https://scontent.fkdt3-1.fna.fbcdn.net/v/t1.6435-9/90144946_105952091047326_6865161363279314944_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeE0khaxTyqBTKsz5oA-92fmtKzDOuwq3LG0rMM67CrcsToXStycNv4ZuwF1vaPnSlBOX4ajD_VdRWEJL6S4oPl6&_nc_ohc=muDUuiXvueEQ7kNvwEC59t7&_nc_oc=AdlfpxMu224G-Oh6-d6J-L2Xz-hx6fVUW5_1RZHBkpw23NqHihFkxVZr3eUKdpBeqN-w8pCzRsVSMCZkMXj044eR&_nc_zt=23&_nc_ht=scontent.fkdt3-1.fna&_nc_gid=UaonQa1l9Vsk1ziX8iymNw&oh=00_AfTUUu3M-Fs20imHA5AnKMmKJLhXODi5Ha4NpwjEEnU4DA&oe=68A7242A" alt="ผลงาน 5" />
+    </div>
+  </section>
+
+  <footer>
+    <p>เพจ: <strong>Rakna Design</strong></p>
+    <p>ไอดีไลน์: 
+      <a href="https://line.me/ti/p/~165bjkif" target="_blank" rel="noopener noreferrer">@165bjkif</a>
+    </p>
+    <p>เบอร์โทร: <a href="tel:0625935581">062-593-5581</a></p>
+  </footer>
+
+  <div class="contact-widget" aria-label="ช่องทางติดต่อ">
+    <a href="https://line.me/ti/p/~165bjkif" target="_blank" rel="noopener noreferrer" aria-label="ติดต่อทางไลน์">
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor" width="24" height="24" style="margin-right:12px;">
+        <path d="M17.6 2H6.4A4.4 4.4 0 002 6.4v11.2A4.4 4.4 0 006.4 22h11.2a4.4 4.4 0 004.4-4.4V6.4A4.4 4.4 0 0017.6 2zm-7.1 11.9l-3-3 1.2-1.2 1.8 1.8 4.8-4.8 1.2 1.2-6 6z"/>
+      </svg>
+      @165bjkif
+    </a>
+    <a href="tel:0625935581" aria-label="โทรศัพท์">
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor" width="24" height="24" style="margin-right:12px;">
+        <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21 11.36 11.36 0 003.58.57 1 1 0 011 1v3.44a1 1 0 01-1 1A16 16 0 014 6a1 1 0 011-1h3.44a1 1 0 011 1 11.36 11.36 0 00.57 3.58 1 1 0 01-.21 1.11l-2.18 2.1z"/>
+      </svg>
+      062-593-5581
+    </a>
+  </div>
+
+</body>
+</html>
