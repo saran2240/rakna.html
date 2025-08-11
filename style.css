@@ -1,0 +1,88 @@
+.hero {
+  min-height: 100vh;
+  background-image: url("illustration-anime-city.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* ถ้าต้องการให้ภาพคงที่เมื่อ scroll: background-attachment: fixed; */
+}
+
+/* มืดด้านบนภาพเพื่อให้ตัวอักษรอ่านง่าย */
+.overlay {
+  position: absolute;
+  inset: 0; /* top:0 right:0 bottom:0 left:0 */
+  background: rgba(0,0,0,0.55);
+  pointer-events: none;
+}
+
+/* ---------- content card (ตรงกลาง) ---------- */
+.center-card {
+  position: relative; /* ให้อยู่บน overlay */
+  z-index: 2;
+  width: min(340px, 90%);
+  text-align: center;
+  padding: 28px 20px;
+  color: #fff;
+  font-family: "Montserrat", "Bebas Neue", system-ui, sans-serif;
+}
+
+/* หัวข้อ */
+.center-card h1 {
+  margin: 0 0 20px;
+  font-size: 3rem;
+  letter-spacing: 4px;
+  font-weight: 700;
+}
+
+/* ลิงก์ปุ่ม */
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ปุ่มทั่วไป */
+.link-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 12px 28px;
+  border-radius: 4px;
+  color: #fff;
+  transition: transform .18s ease, opacity .18s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* hover effect */
+.link-btn:hover {
+  transform: translateY(-3px);
+  opacity: 0.95;
+}
+
+/* สีเฉพาะปุ่ม */
+.instagram { background: #e1306c; }
+.discord   { background: #5865F2; }
+.facebook  { background: #1877F2; }
+
+/* ไอคอนเล็ก ๆ ข้างหน้า (font-awesome) */
+.link-btn i {
+  font-size: 1.05rem;
+}
+
+/* ปรับสำหรับจอเล็ก */
+@media (max-width: 480px) {
+  .center-card h1 { font-size: 2.2rem; }
+  .link-btn { padding: 10px 16px; font-size: 0.95rem; }
+}
